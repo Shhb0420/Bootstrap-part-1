@@ -15,638 +15,438 @@
   </head>
   <body>
     <!---------------------------------- Navbar ---------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-      <a href="" id="logo-brand">
-        <img src="assets/img/Vector.png" alt="logo-shop">
-        Blanja
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0">
-          <input
-              width="300px"
-              class="form-control mr-sm-2"
-              type="search"
-              id="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          <button class="btn my-2 my-sm-2 far fa-search icon" type="submit"></button>
-        </form>
-        <button class="btn my-2 my-sm-2 my-md-2 fal fa-filter filter" type="submit"></button>
-        <button class="btn my-2 my-sm-2 my-md-2 far fa-shopping-cart" id="shopping" type="submit"></button>
-          <button type="submit" class="btn-login btn my-2 my-sm-2"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
-          <button type="submit" class="btn-signup btn my-2 my-sm-2"><a href="signup.html" style="text-decoration: none; color: black;">Sign Up</a></button>
-      </div>
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <div class="logo-brand">
+                    <img src="assets/img/Vector.png" alt="logo-shop">
+                    <h1>Blanja</h1>
+                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="form-input">
+                    <input type="text" name="" id="search" placeholder="Search">
+                    <button class="btn my-2 my-sm-2 far fa-search icon" type="submit"></button>
+                </div>
+                <button class="btn my-2 my-sm-0 fal fa-filter filter" type="submit"></button>
+                <div class="navbar-nav ml-auto"></div>
+                    <div class="shopping">
+                        <button class="btn my-2 my-sm-2 my-md-2 far fa-shopping-cart" id="shopping" type="submit"></button>
+                    </div>
+                    <div class="login">
+                        <button type="submit" class="btn-login btn my-2 my-sm-2"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+                    </div>
+                    <div class="signup">
+                        <button type="submit" class="btn-signup btn my-2 my-sm-2"><a href="signup.html" style="text-decoration: none; color: black;">Sign Up</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-    </nav>
+    
     <div class="container">
       <div class="row">
-        <div class="col-lg-1 image-1">
-          <img src="assets/img/img-4.png" alt="">
+        <div class="col-lg-1 d-lg-block d-none image-1">
+          <img src="assets/img/img-4.png" alt="" class="img-fluid rounded" style="height: 177px;">
         </div>
-        <div class="col-lg-5 image-2">
-          <img src="assets/img/img-1.png" alt="">
+        <div class="col-lg-5 col-md-6 col-sm-auto image-2">
+          <img src="assets/img/img-1.png" alt="" class="img-fluid rounded">
           <h3>Trends in 2020</h3>
         </div>
-        <div class="col-lg-5 image-3">  
-          <img src="assets/img/img-5.png" alt="">
+        <div class="col-lg-5 col-md-6 col-sm-auto image-3">  
+          <img src="assets/img/img-5.png" alt="" class="img-fluid rounded">
           <h3>Black Edition</h3>
         </div>
-        <div class="col-lg-1 image-4">
-          <img src="assets/img/img-3.png" alt="">
-        </div>
-      </div>
-    <!------------------------ Category Title ---------------------->
-      <div class="title-category">
-        <h3>Category</h3>
-        <h6>What are you currentyl looking for</h6>
-      </div>
-      <div class="row row-cols-5">
-        <div class="col brand-category">
-          <img src="assets/img/hiclipart-15.png" alt="">
-          <h3>T-Shirt</h3>
-        </div>
-        <div class="col brand-category-1">
-          <img src="assets/img/hiclipart-21.png" alt="">
-          <h3>Shorts</h3>
-        </div>
-        <div class="col brand-category-2">
-          <img src="assets/img/hiclipart-22.png" alt="">
-          <h3>Jacket</h3>
-        </div>
-        <div class="col brand-category-3">
-          <img src="assets/img/hiclipart-26.png" alt="">
-          <h3>Pants</h3>
-        </div>
-        <div class="col brand-category-4">
-          <img src="assets/img/hiclipart-34.png" alt="">
-          <h3>Shoes</h3>
-        </div>
-      </div>
-
-      <div class="new-product">
-        <h3 class="title-new-product">New</h3>
-        <h6 class="text-new-product">You've never seen it before!</h6>
-      </div>
-      <div class="row row-cols-5">
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="popular-product">
-        <h3 class="title-popular-product">Popular</h3>
-        <h6 class="text-popular-product">Find clothes that are trending recently</h6>
-      </div>
-      <div class="row row-cols-5">
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card m-1">
-            <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
-            <div class="card-body m-1">
-              <p class="card-product m-1">Men's formal suit - Black & White</p>
-              <p class="card-price m-1">$ 40.0</p>
-              <p class="card-brand m-1">Zalora Cloth</p>
-              <p style="color:orange" class="m-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i>(10)</i>
-              </p>
-            </div>
-          </div>
+        <div class="col-lg-1 d-lg-block d-none image-4">
+          <img src="assets/img/img-3.png" alt="" class="img-fluid rounded" style="height: 177px;">
         </div>
       </div>
     </div>
-
+    <!------------------------ Category Title ---------------------->
+    <div class="container">
+        <div class="title-category">
+                <h3>Category</h3>
+                <p class="lead text-muted">What are you currently looking for</p>
+            <div class="row row-cols-5 d-flex justify-content-between">
+                <div class="col col-md-auto col-12 rounded box brand-category">
+                    <img src="assets/img/hiclipart-15.png" alt="" class="fluid mx-auto d-block">
+                    <h3>T-Shirt</h3>
+                </div>
+                <div class="col col-md-auto col-12 rounded box brand-category-1">
+                    <img src="assets/img/hiclipart-21.png" alt="" class="fluid mx-auto d-block">
+                    <h3>Shorts</h3>
+                </div>
+                <div class="col col-md-auto col-12 rounded box brand-category-2">
+                    <img src="assets/img/hiclipart-22.png" alt="" class="fluid mx-auto d-block">
+                    <h3>Jacket</h3>
+                </div>
+                <div class="col col-md-auto col-12 rounded box brand-category-3">
+                    <img src="assets/img/hiclipart-26.png" alt="" class="fluid mx-auto d-block">
+                    <h3>Pants</h3>
+                </div>
+                <div class="col col-md-auto col-12 rounded box brand-category-4">
+                    <img src="assets/img/hiclipart-34.png" alt="" class="fluid mx-auto d-block">
+                    <h3>Shoes</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!------------------------- Product New ------------------------------>
+    <div class="container">
+        <div class="new-product">
+            <h3 class="title-new-product">New</h3>
+            <p class="text-new-product">You've never seen it before!</>
+        <div class="row">
+            <!-- Baris Pertama 1 - 5 -->
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+                            <!------ Baris Pertama 5 - 10 -->
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+                <!------------------------ Baris Pertama 10 - 15 ------------------------>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-auto col-12">
+                <div class="card rounded">
+                    <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                    <h5 class="card-product">Men's formal suit - Black & White</h5>
+                    <h5 class="card-price">$ 40.0</h5>
+                    <p class="card-brand">Zalora Cloth</p>
+                    <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+        <!-------------------------- Popular Product  ------------------------->
+        <div class="container">
+            <div class="popular-product">
+                <h3 class="title-popular-product">New</h3>
+                <p class="text-popular-product">Find clothes that are trending recently</>
+            <div class="row">
+                <!-- Baris Pertama 1 - 5 -->
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                                <!------ Baris Pertama 5 - 10 -->
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                    <!------------------------ Baris Pertama 10 - 15 ------------------------>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-auto col-12">
+                    <div class="card rounded">
+                        <img src="assets/img/img-2.png" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                        <h5 class="card-product">Men's formal suit - Black & White</h5>
+                        <h5 class="card-price">$ 40.0</h5>
+                        <p class="card-brand">Zalora Cloth</p>
+                        <img src="assets/img/Rating 5 stars.png" alt="" class="rating-img">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
